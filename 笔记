@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+<body>
+    <p>
+        为了做出更好的成绩，所以队员都在加强训练，以此来增强自己的代码能力
+    </p>
+    <br>
+    <!-- 换行 -->
+    <hr>
+    <!-- 水平线 -->
+    <b>加粗</b>
+    <code>计算机代码</code>
+    <em>强调文本</em>
+    <i>斜体文本</i>
+    <kbd>键盘输入</kbd>
+    <pre>预格式化文本</pre>
+    <small>更小的文本</small>
+    <strong>重要的文本</strong>
+
+    <abbr title="">缩写</abbr>
+    <bdo dir="">文字方向</bdo>
+    <blockquote>从另一个源引用的部分</blockquote>
+    <cite>工作的名称</cite>
+    <del>删除的文本</del>
+    <ins>插入的文本</ins>
+    <sub>下标文本</sub>
+    <sup>上标文本</sup>
+    <address>联系信息</address>
+    
+    <img src="./图片/ok.jpg" alt="">
+    
+    <!-- 图片标签 -->
+    <audio src="插入地址"auto(自动播放)  controls(显示播放控键)  loop(循环播放)>音频插入</audio>
+   
+    <!-- 视频标签 -->
+    <video src="xxx.mp4"  controls(显示播放的控件)  autoplay(谷歌需要配合muted实现静音播放)  loop(循环播放)></video>
+    
+    <!-- 超链接：从一个跳到另一个 -->
+    <a href="./目标链接.html"> 超链接</a>
+    <!-- 例子 -->
+    <a href="https://www.baidu.com"> 跳转到百度 </a>
+    <br>
+    <a href="./01.html"> 点我就去01</a>
+    <!-- 在开发初期，未知跳转地址的情况下，href的值书写#(空链接) -->
+    <!-- href：跳转地址 -->
+
+    <!-- target属性 -->
+    <!-- _self:默认值，在当前窗口中跳转(覆盖原网页) -->
+    <!-- _blank:在新窗口中跳转(保留原网页) -->
+    <a href="https://www.baidu.com" target="_blank"></a>
+
+
+    <!-- 列表 -->
+    <p>无序</p>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+
+    <p>有序</p>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    <p>自定义列表</p>
+    <audio src="./图片/1.png"></audio>
+    <!-- dl：自定义列表的整体，dt：自定义列表的主题，dd：正对主题的每一项内容 -->
+    <p>图片中的"帮助中心"就是dt,账户管理等就是dd(dd前会默认显示缩进效果)</p>
+    <dl>
+        <dt>帮助中心</dt>
+        <dd>账户中心</dd>
+    </dl>
+
+
+    <p>表格</p>
+    <p>标签:table:整体表格,包裹tr tr:表格单元格 td:单元格内容</p>
+    <p>属性:border:边框宽度 width:表格宽度 height:表格高度</p>
+    <audio src="./图片/2.png"></audio>
+    <table border="2" width="500" height="300">
+        <tr>
+            <td>姓名</td>
+            <td>成绩</td>
+            <td>评语</td>
+        </tr>
+        <tr>
+            <td>笑哈哈</td>
+            <td>100分</td>
+            <td>笑得真开心</td>
+        </tr>
+        <tr>
+            <td>笑嘻嘻</td>
+            <td>0分</td>
+            <td>笑得真灿烂</td>
+        </tr>
+        <tr>
+            <td>噶</td>
+            <td>小提莫</td>
+            <td>没啥用</td>
+        </tr>
+    </table>
+
+    <p>表格标题</p>
+    <p>表格大标题:caption(没有加粗效果)</p>
+    <p>表头单元格:th(书写在tr内部,用于替换td)(有加粗效果)</p>
+
+    <p>表格结构标签</p>
+    <p>thead:表格头部
+        tbody:表格主体
+        tfoot:表格底部
+    </p>
+
+    <p>合并单元格(左上原则:上下合并:只保留最上的:左右合并:只保留最左的)</p>
+    <p>保留的单元格设置:跨行合并(rowspan) 跨列合并(colspan)</p>
+    <p><strong>只有同一个结构标签的才能合合并,thead和tbody不能和</strong></p>
+    <table>
+        <tbody>
+            <tr>
+                <td>zhang</td>
+                <td rowspan="2">100</td>
+                <!-- 被删除<td>666</td> -->
+            </tr>
+            <tr>
+                <td>peng</td>
+                <!-- 被删除：<td>78</td> -->
+                <td colspan="2">777</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <p>表单标签:登录,注册,搜索</p>
+    <p>input:</p>
+    <img src="/图片/6.png" alt="">
+    
+
+
+    <style>
+        p{
+            color:red
+        }
+    </style>
+
+
+    <!-- js -->
+    <script>
+        alert("欢迎来到树屿凉的世界");
+    </script>
+</body>
+</html>
